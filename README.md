@@ -1,4 +1,6 @@
 # Where Can I Vote?
+![Example image](https://i.imgur.com/Lm64hPT.png)
+
 This was a simple project created during the RIT Election Night Hackathon 2017. It's goal was to provide a straight-forward,
 no frills way of allowing people to find their voting location so that they can go out and vote.
 
