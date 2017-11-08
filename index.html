@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+        // This can be the same key as in queryGoogle.php but it's not recommended, as this api key is less secure
+        var MAPS_API_KEY = "Maps-API-Key-Here";
+
+        //Add google maps script
+        $.ajax({
+            url: "https://maps.googleapis.com/maps/api/js?key=" + MAPS_API_KEY,
+            dataType: 'script',
+            sync: true
+        });
+    </script>
+    <script src="js/map.js" type="text/javascript"></script>
+    <script src="js/application.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <title>Where can I vote?</title>
+</head>
+
+<body>
+<h1 class="header-center">Where can I vote?</h1>
+<span>
+    <h5 class="form-center">Your election:</h5>
+    <select id="elections" name="elections" class="form-input form-control form-center">
+        <option value="-9999">Select an election</option>
+    </select><br>
+    <span id="address-data" class="span-hidden">
+        <h5 class="form-center">Your Address</h5>
+        <input type="text" id="address-input" placeholder="Address" class="form-input address-input form-control"/>
+    </span>
+    <div class="response-hidden" id="response">
+        <h5 class="form-center" id="voting-location"></h5>
+        <div id="map" class="map"></div>
+    </div>
+</span>
+<p class="footer">How to use: Select your local/state election and enter your address to get directions to your local polling station (Hit enter after typing your address)<br> Created by Christopher Bitler</p>
+</body>
+</html>

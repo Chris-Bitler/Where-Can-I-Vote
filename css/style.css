@@ -1,0 +1,51 @@
+.header-center {
+    text-align: center;
+    width: 100%;
+}
+
+.form-center {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-input {
+    width: 50% !important;
+}
+
+.address-input {
+    margin: 0 auto;
+    width: 50%;
+    display: none;
+}
+
+.button {
+    margin: 4px auto;
+    display: block;
+}
+
+.response-hidden {
+    display: none;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+.span-hidden {
+    display: none;
+}
+
+.map {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.footer {
+    display: block;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
